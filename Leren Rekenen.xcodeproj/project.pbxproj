@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111C58221667952500419631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111C58211667952500419631 /* UIKit.framework */; };
+		111C58241667952500419631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111C58231667952500419631 /* Foundation.framework */; };
+		111C58261667952500419631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111C58251667952500419631 /* CoreGraphics.framework */; };
+		111C582C1667952500419631 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 111C582A1667952500419631 /* InfoPlist.strings */; };
+		111C582E1667952500419631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 111C582D1667952500419631 /* main.m */; };
+		111C58321667952500419631 /* GRSHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 111C58311667952500419631 /* GRSHAppDelegate.m */; };
+		111C58341667952500419631 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58331667952500419631 /* Default.png */; };
+		111C58361667952500419631 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58351667952500419631 /* Default@2x.png */; };
+		111C58381667952500419631 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58371667952500419631 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		111C581D1667952500419631 /* Leren Rekenen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leren Rekenen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		111C58211667952500419631 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		111C58231667952500419631 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		111C58251667952500419631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		111C58291667952500419631 /* Leren Rekenen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Leren Rekenen-Info.plist"; sourceTree = "<group>"; };
+		111C582B1667952500419631 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		111C582D1667952500419631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		111C582F1667952500419631 /* Leren Rekenen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Leren Rekenen-Prefix.pch"; sourceTree = "<group>"; };
+		111C58301667952500419631 /* GRSHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRSHAppDelegate.h; sourceTree = "<group>"; };
+		111C58311667952500419631 /* GRSHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRSHAppDelegate.m; sourceTree = "<group>"; };
+		111C58331667952500419631 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		111C58351667952500419631 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		111C58371667952500419631 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		111C581A1667952500419631 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111C58221667952500419631 /* UIKit.framework in Frameworks */,
+				111C58241667952500419631 /* Foundation.framework in Frameworks */,
+				111C58261667952500419631 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		111C58121667952500419631 = {
+			isa = PBXGroup;
+			children = (
+				111C58271667952500419631 /* Leren Rekenen */,
+				111C58201667952500419631 /* Frameworks */,
+				111C581E1667952500419631 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		111C581E1667952500419631 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				111C581D1667952500419631 /* Leren Rekenen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		111C58201667952500419631 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				111C58211667952500419631 /* UIKit.framework */,
+				111C58231667952500419631 /* Foundation.framework */,
+				111C58251667952500419631 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		111C58271667952500419631 /* Leren Rekenen */ = {
+			isa = PBXGroup;
+			children = (
+				111C58301667952500419631 /* GRSHAppDelegate.h */,
+				111C58311667952500419631 /* GRSHAppDelegate.m */,
+				111C58281667952500419631 /* Supporting Files */,
+			);
+			path = "Leren Rekenen";
+			sourceTree = "<group>";
+		};
+		111C58281667952500419631 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				111C58291667952500419631 /* Leren Rekenen-Info.plist */,
+				111C582A1667952500419631 /* InfoPlist.strings */,
+				111C582D1667952500419631 /* main.m */,
+				111C582F1667952500419631 /* Leren Rekenen-Prefix.pch */,
+				111C58331667952500419631 /* Default.png */,
+				111C58351667952500419631 /* Default@2x.png */,
+				111C58371667952500419631 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		111C581C1667952500419631 /* Leren Rekenen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 111C583B1667952500419631 /* Build configuration list for PBXNativeTarget "Leren Rekenen" */;
+			buildPhases = (
+				111C58191667952500419631 /* Sources */,
+				111C581A1667952500419631 /* Frameworks */,
+				111C581B1667952500419631 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Leren Rekenen";
+			productName = "Leren Rekenen";
+			productReference = 111C581D1667952500419631 /* Leren Rekenen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		111C58141667952500419631 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GRSH;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jettro Coenradie";
+			};
+			buildConfigurationList = 111C58171667952500419631 /* Build configuration list for PBXProject "Leren Rekenen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 111C58121667952500419631;
+			productRefGroup = 111C581E1667952500419631 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				111C581C1667952500419631 /* Leren Rekenen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		111C581B1667952500419631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111C582C1667952500419631 /* InfoPlist.strings in Resources */,
+				111C58341667952500419631 /* Default.png in Resources */,
+				111C58361667952500419631 /* Default@2x.png in Resources */,
+				111C58381667952500419631 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		111C58191667952500419631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111C582E1667952500419631 /* main.m in Sources */,
+				111C58321667952500419631 /* GRSHAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		111C582A1667952500419631 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				111C582B1667952500419631 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		111C58391667952500419631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		111C583A1667952500419631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		111C583C1667952500419631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Leren Rekenen/Leren Rekenen-Prefix.pch";
+				INFOPLIST_FILE = "Leren Rekenen/Leren Rekenen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		111C583D1667952500419631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Leren Rekenen/Leren Rekenen-Prefix.pch";
+				INFOPLIST_FILE = "Leren Rekenen/Leren Rekenen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		111C58171667952500419631 /* Build configuration list for PBXProject "Leren Rekenen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111C58391667952500419631 /* Debug */,
+				111C583A1667952500419631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		111C583B1667952500419631 /* Build configuration list for PBXNativeTarget "Leren Rekenen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111C583C1667952500419631 /* Debug */,
+				111C583D1667952500419631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 111C58141667952500419631 /* Project object */;
+}
