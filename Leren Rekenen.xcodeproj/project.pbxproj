@@ -16,6 +16,10 @@
 		111C58341667952500419631 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58331667952500419631 /* Default.png */; };
 		111C58361667952500419631 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58351667952500419631 /* Default@2x.png */; };
 		111C58381667952500419631 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58371667952500419631 /* Default-568h@2x.png */; };
+		2880C75E5FD0272C4D7AC044 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C6E174215A6C51B0059D /* MainViewController.m */; };
+		2880C91162B0C238277B8ED9 /* MixedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C8FC573F5800319C236B /* MixedTableViewController.m */; };
+		2880CA99A9E72A0878236514 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C0CE497E9BEB6D61B6CC /* SimpleTableViewController.m */; };
+		2880CD6178A301F19F0B9C78 /* Assignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C94E9D720BBD585A0869 /* Assignment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,14 @@
 		111C58331667952500419631 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		111C58351667952500419631 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		111C58371667952500419631 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2880C0CE497E9BEB6D61B6CC /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
+		2880C2D09750360A13BA2216 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2880C6E174215A6C51B0059D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2880C8FC573F5800319C236B /* MixedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixedTableViewController.m; sourceTree = "<group>"; };
+		2880C94E9D720BBD585A0869 /* Assignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assignment.m; sourceTree = "<group>"; };
+		2880CAAE0711344667ED3F83 /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		2880CD6994CDE35AAF9BEC55 /* Assignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assignment.h; sourceTree = "<group>"; };
+		2880CFF466658C0A016B4CAB /* MixedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixedTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,14 @@
 				111C58301667952500419631 /* GRSHAppDelegate.h */,
 				111C58311667952500419631 /* GRSHAppDelegate.m */,
 				111C58281667952500419631 /* Supporting Files */,
+				2880C6E174215A6C51B0059D /* MainViewController.m */,
+				2880C2D09750360A13BA2216 /* MainViewController.h */,
+				2880C0CE497E9BEB6D61B6CC /* SimpleTableViewController.m */,
+				2880CAAE0711344667ED3F83 /* SimpleTableViewController.h */,
+				2880C8FC573F5800319C236B /* MixedTableViewController.m */,
+				2880CFF466658C0A016B4CAB /* MixedTableViewController.h */,
+				2880C94E9D720BBD585A0869 /* Assignment.m */,
+				2880CD6994CDE35AAF9BEC55 /* Assignment.h */,
 			);
 			path = "Leren Rekenen";
 			sourceTree = "<group>";
@@ -167,6 +187,10 @@
 			files = (
 				111C582E1667952500419631 /* main.m in Sources */,
 				111C58321667952500419631 /* GRSHAppDelegate.m in Sources */,
+				2880C75E5FD0272C4D7AC044 /* MainViewController.m in Sources */,
+				2880CA99A9E72A0878236514 /* SimpleTableViewController.m in Sources */,
+				2880C91162B0C238277B8ED9 /* MixedTableViewController.m in Sources */,
+				2880CD6178A301F19F0B9C78 /* Assignment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +267,7 @@
 				GCC_PREFIX_HEADER = "Leren Rekenen/Leren Rekenen-Prefix.pch";
 				INFOPLIST_FILE = "Leren Rekenen/Leren Rekenen-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -254,6 +279,7 @@
 				GCC_PREFIX_HEADER = "Leren Rekenen/Leren Rekenen-Prefix.pch";
 				INFOPLIST_FILE = "Leren Rekenen/Leren Rekenen-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -277,6 +303,7 @@
 				111C583D1667952500419631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
