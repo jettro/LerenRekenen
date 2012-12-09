@@ -8,9 +8,12 @@
 #import "SimpleTableViewController.h"
 #import "Assignment.h"
 
+@interface SimpleTableViewController ()
+// What does this do?
+@end
 
 @implementation SimpleTableViewController {
-    NSMutableArray *inputFields;
+    NSMutableArray *assignments;
 }
 
 - (id)init {
@@ -21,7 +24,7 @@
         [self.view setBackgroundColor:[UIColor whiteColor]];
         [self.view addSubview:[self greetingWithTable:self.table]];
 
-        inputFields = [NSMutableArray arrayWithCapacity:10];
+        assignments = [NSMutableArray arrayWithCapacity:10];
         for (int j = 1; j <= 10; j++) {
             int row = j;
             int column = 1;
@@ -30,7 +33,7 @@
                 column = 2;
             }
             NSDictionary *dictionary = [self show:[Assignment assignmentWithArgumentA:j argumentB:self.table type:Multiplication] atRow:row atColumn:column];
-            [inputFields addObject:dictionary];
+            [assignments addObject:dictionary];
             [self.view addSubview:dictionary[@"textfield"]];
             [self.view addSubview:dictionary[@"label"]];
         }
@@ -41,16 +44,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addSelectTableButton];
+    [self.view addSubview:[self addSelectTableButton]];
 }
 
 
-- (void)addSelectTableButton {
+- (UIView *)addSelectTableButton {
     UIButton *chooseTableBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [chooseTableBtn setFrame:CGRectMake(200, 0, 100, 20)];
     [chooseTableBtn setTitle:@"Kies" forState:UIControlStateNormal];
     [chooseTableBtn addTarget:self action:@selector(selectTableDummy) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:chooseTableBtn];
+    return chooseTableBtn;
 }
 
 - (void)selectTableDummy {
@@ -92,10 +95,8 @@
     label.text = [NSString stringWithFormat:@"%u%@%u", assignment.argumentA, mathSign, assignment.argumentB];
     textField.borderStyle = UITextBorderStyleRoundedRect;
     [textField setKeyboardType:UIKeyboardTypeNumberPad];
-    NSArray *myValues = @[label, textField, assignment];
-    NSArray *myKeys = @[@"label", @"textfield", @"assignment"];
 
-    return [NSDictionary dictionaryWithObjects:myValues forKeys:myKeys];
+    return @{@"label" : label, @"textfield" : textField, @"assignment" : assignment};
 }
 
 @end

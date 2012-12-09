@@ -11,13 +11,12 @@
 
 @implementation GRSHAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
 
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[MainViewController new]];
-    self.window.rootViewController = nav;
+    self.nav = [[UINavigationController alloc] initWithRootViewController:[MainViewController new]];
+    self.window.rootViewController = self.nav;
 
     [self.window makeKeyAndVisible];
     return YES;

@@ -28,23 +28,23 @@
 - (void)viewDidAppear:(BOOL)animated {
     self.navigationController.navigationBar.tintColor = [UIColor redColor];
     UIBarButtonItem *simple = [[UIBarButtonItem alloc] initWithTitle:@"Simpel" style:UIBarButtonItemStyleBordered
-                                                                          target:self
-                                                                          action:@selector(openSimpleTable:)];
+                                                              target:self
+                                                              action:@selector(openSimpleTable:)];
 
     UIBarButtonItem *mixed = [[UIBarButtonItem alloc] initWithTitle:@"Mixed" style:UIBarButtonItemStyleBordered
-                                                            target:self
-                                                            action:@selector(openMixedTable:)];
-    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:simple,mixed,nil];
+                                                             target:self
+                                                             action:@selector(openMixedTable:)];
+    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:simple, mixed, nil];
 }
 
 - (IBAction)openMixedTable:(id)sender {
     MixedTableViewController *mixedTableViewController = [MixedTableViewController new];
-    [self.view addSubview:mixedTableViewController.view];
+    [self.navigationController pushViewController:mixedTableViewController animated:TRUE];
 }
 
 - (IBAction)openSimpleTable:(id)sender {
     SimpleTableViewController *simpleTableViewController = [SimpleTableViewController new];
-    [self.view addSubview:simpleTableViewController.view];
+    [self.navigationController pushViewController:simpleTableViewController animated:TRUE];
 
 }
 
