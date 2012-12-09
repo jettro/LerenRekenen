@@ -8,11 +8,9 @@
 #import <Foundation/Foundation.h>
 
 
-@interface SimpleTableViewController : UIViewController
-{
+@interface SimpleTableViewController : UIViewController {
 
 }
-- (IBAction)selectTable:(id)selectTable;
-
+@property(nonatomic, readwrite) int table;
 
 @end
