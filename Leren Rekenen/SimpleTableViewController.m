@@ -9,10 +9,6 @@
 #import "Assignment.h"
 #import "SelectTableViewController.h"
 
-@interface SimpleTableViewController ()
-// What does this do?
-@end
-
 @implementation SimpleTableViewController {
     NSMutableArray *assignments;
     UIButton *doneButton;
@@ -22,7 +18,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.table = 7;
+        self.table = [[NSNumber numberWithInt:arc4random_uniform(10) + 1] intValue];
 
         [self.view setBackgroundColor:[UIColor whiteColor]];
         greeting = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 140, 20)];

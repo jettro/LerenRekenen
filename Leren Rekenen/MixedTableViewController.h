@@ -8,8 +8,13 @@
 #import <Foundation/Foundation.h>
 
 
-@interface MixedTableViewController : UIViewController
-{
+@interface MixedTableViewController : UIViewController {
 
 }
+
+@property(nonatomic, readwrite) int table;
+@property(nonatomic, readwrite) int currentAssignment;
+@property(nonatomic, readwrite) UILabel *assignmentLabel;
+@property(nonatomic, readwrite) UITextField *assignmentAnswer;
+
 @end

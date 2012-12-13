@@ -16,6 +16,7 @@
 		111C58341667952500419631 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58331667952500419631 /* Default.png */; };
 		111C58361667952500419631 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58351667952500419631 /* Default@2x.png */; };
 		111C58381667952500419631 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58371667952500419631 /* Default-568h@2x.png */; };
+		2880C73AA80D90D36B2123ED /* NSMutableArrayShuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C63C61E32D684A9C4012 /* NSMutableArrayShuffle.m */; };
 		2880C75E5FD0272C4D7AC044 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C6E174215A6C51B0059D /* MainViewController.m */; };
 		2880C7DEDBD9E901B71C2FA2 /* SelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C875C319A5D6D30ECB7D /* SelectTableViewController.m */; };
 		2880C91162B0C238277B8ED9 /* MixedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C8FC573F5800319C236B /* MixedTableViewController.m */; };
@@ -40,12 +41,14 @@
 		2880C0CE497E9BEB6D61B6CC /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
 		2880C1A0402E53079A457E28 /* SelectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTableViewController.h; sourceTree = "<group>"; };
 		2880C2D09750360A13BA2216 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2880C63C61E32D684A9C4012 /* NSMutableArrayShuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArrayShuffle.m; sourceTree = "<group>"; };
 		2880C6E174215A6C51B0059D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		2880C875C319A5D6D30ECB7D /* SelectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTableViewController.m; sourceTree = "<group>"; };
 		2880C8FC573F5800319C236B /* MixedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixedTableViewController.m; sourceTree = "<group>"; };
 		2880C94E9D720BBD585A0869 /* Assignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assignment.m; sourceTree = "<group>"; };
 		2880CAAE0711344667ED3F83 /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
 		2880CD6994CDE35AAF9BEC55 /* Assignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assignment.h; sourceTree = "<group>"; };
+		2880CF74FBC0204E452BE0DD /* NSMutableArrayShuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArrayShuffle.h; sourceTree = "<group>"; };
 		2880CFF466658C0A016B4CAB /* MixedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixedTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +109,8 @@
 				2880CD6994CDE35AAF9BEC55 /* Assignment.h */,
 				2880C875C319A5D6D30ECB7D /* SelectTableViewController.m */,
 				2880C1A0402E53079A457E28 /* SelectTableViewController.h */,
+				2880C63C61E32D684A9C4012 /* NSMutableArrayShuffle.m */,
+				2880CF74FBC0204E452BE0DD /* NSMutableArrayShuffle.h */,
 			);
 			path = "Leren Rekenen";
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				2880C91162B0C238277B8ED9 /* MixedTableViewController.m in Sources */,
 				2880CD6178A301F19F0B9C78 /* Assignment.m in Sources */,
 				2880C7DEDBD9E901B71C2FA2 /* SelectTableViewController.m in Sources */,
+				2880C73AA80D90D36B2123ED /* NSMutableArrayShuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
