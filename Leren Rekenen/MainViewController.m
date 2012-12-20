@@ -1,10 +1,3 @@
-//
-// Created by jcoenradie on 11/29/12.
-//
-// To change the template use AppCode | Preferences | File Templates.
-//
-
-
 #import "MainViewController.h"
 #import "SimpleTableViewController.h"
 #import "MixedTableViewController.h"
@@ -27,26 +20,42 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     self.navigationController.navigationBar.tintColor = [UIColor redColor];
-    UIBarButtonItem *simple = [[UIBarButtonItem alloc] initWithTitle:@"Simpel" style:UIBarButtonItemStyleBordered
-                                                              target:self
-                                                              action:@selector(openSimpleTable:)];
-
-    UIBarButtonItem *mixed = [[UIBarButtonItem alloc] initWithTitle:@"Mixed" style:UIBarButtonItemStyleBordered
-                                                             target:self
-                                                             action:@selector(openMixedTable:)];
-    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:simple, mixed, nil];
+    self.title = @"Leren rekenen";
 }
 
-- (IBAction)openMixedTable:(id)sender {
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    UIButton *simpleTableButton = [self createSimpleTableButton];
+    UIButton *mixedTableButton = [self createMixedTableButton];
+
+    [self.view addSubview:simpleTableButton];
+    [self.view addSubview:mixedTableButton];
+}
+
+- (UIButton *)createSimpleTableButton {
+    UIButton *simpleTableButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [simpleTableButton setTitle:@"Eenvoudige tafels" forState:UIControlStateNormal];
+    [simpleTableButton setFrame:CGRectMake(10, 50, 150, 30)];
+    [simpleTableButton addTarget:self action:@selector(openSimpleTable) forControlEvents:UIControlEventTouchUpInside];
+    return simpleTableButton;
+}
+
+- (UIButton *)createMixedTableButton {
+    UIButton *simpleTableButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [simpleTableButton setTitle:@"Gemengde tafels" forState:UIControlStateNormal];
+    [simpleTableButton setFrame:CGRectMake(10, 90, 150, 30)];
+    [simpleTableButton addTarget:self action:@selector(openMixedTable) forControlEvents:UIControlEventTouchUpInside];
+    return simpleTableButton;
+}
+
+- (void)openMixedTable {
     MixedTableViewController *mixedTableViewController = [MixedTableViewController new];
     [self.navigationController pushViewController:mixedTableViewController animated:TRUE];
 }
 
-- (IBAction)openSimpleTable:(id)sender {
+- (void)openSimpleTable {
     SimpleTableViewController *simpleTableViewController = [SimpleTableViewController new];
     [self.navigationController pushViewController:simpleTableViewController animated:TRUE];
-
 }
-
 
 @end
