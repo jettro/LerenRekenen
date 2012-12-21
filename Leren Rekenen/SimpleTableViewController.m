@@ -4,6 +4,10 @@
 
 @implementation SimpleTableViewController {
     NSMutableArray *assignments;
+    UIImage *cryImage;
+    UIImage *happyImage;
+    UIImageView *resultImage;
+
 }
 
 - (id)init {
@@ -12,6 +16,13 @@
         self.table = [[NSNumber numberWithInt:arc4random_uniform(10) + 1] intValue];
         self.title = [self greetingWithTable];
         [self.view setBackgroundColor:[UIColor whiteColor]];
+
+        cryImage = [UIImage imageNamed:@"bigcry.png"];
+        happyImage = [UIImage imageNamed:@"happy.png"];
+        resultImage = [[UIImageView alloc] initWithFrame:CGRectMake(240, 20, 75, 75)];
+        [resultImage setImage:cryImage];
+        [resultImage setHidden:true];
+        [self.view addSubview:resultImage];
 
         assignments = [NSMutableArray arrayWithCapacity:10];
         for (int j = 1; j <= 10; j++) {
@@ -67,17 +78,29 @@
             }
         }
     }
+    [resultImage setHidden:true];
 }
 
 
 - (void)checkAnswers {
+    [resultImage setHidden:true];
+    int errors = 0;
     for (int i = 0; i < 10; i++) {
         UITextField *textField = assignments[(NSUInteger) i][@"textfield"];
         Assignment *assignment = assignments[(NSUInteger) i][@"assignment"];
         if ([assignment validate:textField.text.intValue]) {
             textField.backgroundColor = [UIColor greenColor];
+        } else {
+            errors++;
+            textField.backgroundColor = [UIColor clearColor];
         }
     }
+    if (errors > 0) {
+        [resultImage setImage:cryImage];
+    } else {
+        [resultImage setImage:happyImage];
+    }
+    [resultImage setHidden:false];
 }
 
 - (void)refreshAssignments {
@@ -96,6 +119,7 @@
 
     UITextField *textField = assignments[0][@"textfield"];
     [textField becomeFirstResponder];
+    [resultImage setHidden:true];
 }
 
 - (void)selectTable {
@@ -115,10 +139,10 @@
 }
 
 - (NSDictionary *)show:(Assignment *)assignment atRow:(int)rowNr atColumn:(int)columnNr {
-    int x = (columnNr - 1) * 110 + 5;
+    int x = (columnNr - 1) * 120 + 5;
     int y = (rowNr - 1) * 30 + 5;
-    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(x + 50, y, 40, 25)];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, y, 50, 25)];
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(x + 55, y, 45, 25)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, y, 55, 25)];
 
     NSString *assignmentLabel = [self createAssignmentLabel:assignment];
 

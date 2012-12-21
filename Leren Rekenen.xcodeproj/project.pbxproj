@@ -16,6 +16,10 @@
 		111C58341667952500419631 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58331667952500419631 /* Default.png */; };
 		111C58361667952500419631 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58351667952500419631 /* Default@2x.png */; };
 		111C58381667952500419631 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 111C58371667952500419631 /* Default-568h@2x.png */; };
+		11428B491683A6540073EE20 /* LerenRekenen.png in Resources */ = {isa = PBXBuildFile; fileRef = 11428B481683A6540073EE20 /* LerenRekenen.png */; };
+		11428B4B1683A74A0073EE20 /* LerenRekenen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11428B4A1683A74A0073EE20 /* LerenRekenen@2x.png */; };
+		11428B4F1683AC0F0073EE20 /* bigcry.png in Resources */ = {isa = PBXBuildFile; fileRef = 11428B4D1683AC0F0073EE20 /* bigcry.png */; };
+		11428B501683AC0F0073EE20 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 11428B4E1683AC0F0073EE20 /* happy.png */; };
 		2880C73AA80D90D36B2123ED /* NSMutableArrayShuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C63C61E32D684A9C4012 /* NSMutableArrayShuffle.m */; };
 		2880C75E5FD0272C4D7AC044 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C6E174215A6C51B0059D /* MainViewController.m */; };
 		2880C7DEDBD9E901B71C2FA2 /* SelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C875C319A5D6D30ECB7D /* SelectTableViewController.m */; };
@@ -38,6 +42,10 @@
 		111C58331667952500419631 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		111C58351667952500419631 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		111C58371667952500419631 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		11428B481683A6540073EE20 /* LerenRekenen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LerenRekenen.png; path = ../LerenRekenen.png; sourceTree = "<group>"; };
+		11428B4A1683A74A0073EE20 /* LerenRekenen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LerenRekenen@2x.png"; path = "../LerenRekenen@2x.png"; sourceTree = "<group>"; };
+		11428B4D1683AC0F0073EE20 /* bigcry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigcry.png; sourceTree = "<group>"; };
+		11428B4E1683AC0F0073EE20 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
 		2880C0CE497E9BEB6D61B6CC /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
 		2880C1A0402E53079A457E28 /* SelectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTableViewController.h; sourceTree = "<group>"; };
 		2880C2D09750360A13BA2216 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -96,6 +104,7 @@
 		111C58271667952500419631 /* Leren Rekenen */ = {
 			isa = PBXGroup;
 			children = (
+				11428B4C1683ABD10073EE20 /* images */,
 				111C58301667952500419631 /* GRSHAppDelegate.h */,
 				111C58311667952500419631 /* GRSHAppDelegate.m */,
 				111C58281667952500419631 /* Supporting Files */,
@@ -127,6 +136,17 @@
 				111C58371667952500419631 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11428B4C1683ABD10073EE20 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				11428B4D1683AC0F0073EE20 /* bigcry.png */,
+				11428B4E1683AC0F0073EE20 /* happy.png */,
+				11428B4A1683A74A0073EE20 /* LerenRekenen@2x.png */,
+				11428B481683A6540073EE20 /* LerenRekenen.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +205,10 @@
 				111C58341667952500419631 /* Default.png in Resources */,
 				111C58361667952500419631 /* Default@2x.png in Resources */,
 				111C58381667952500419631 /* Default-568h@2x.png in Resources */,
+				11428B491683A6540073EE20 /* LerenRekenen.png in Resources */,
+				11428B4B1683A74A0073EE20 /* LerenRekenen@2x.png in Resources */,
+				11428B4F1683AC0F0073EE20 /* bigcry.png in Resources */,
+				11428B501683AC0F0073EE20 /* happy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
